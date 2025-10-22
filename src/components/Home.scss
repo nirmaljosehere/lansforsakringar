@@ -1,0 +1,57 @@
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
+@import '../styles/variables';
+
+section {
+  padding-bottom: var(--lfds-semantic-sizes-spacing-x5);
+  text-align: center;
+
+  .content {
+    display: grid;
+    align-items: start;
+    padding-bottom: var(--lfds-semantic-sizes-spacing-x3);
+    column-gap: var(--lfds-semantic-sizes-spacing-x3);
+    max-width: $max-width;
+    margin: 0 auto;
+
+    h1 {
+      margin-top: 0;
+      text-align:left;
+      color: var(--lfds-base-brand-primary-lf-blue);
+    }
+
+    .container {
+      text-align: left;
+    } 
+  } 
+
+  &.about-us .content {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  &.newsletter {
+    background-color: var(--lfds-base-brand-primary-lf-blue);
+    color: var(--lfds-base-brand-primary-snow);
+    .content {
+      grid-template-columns: repeat(2,1fr);
+    }
+    padding: var(--lfds-primitives-size-7x);
+  }
+
+  @media only screen and (max-width: $mobile-breakpoint) {
+    .content {
+      display: inherit;
+    }
+  }
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  section {
+    padding: $tablet-padding;
+  }
+}

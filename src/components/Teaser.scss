@@ -1,0 +1,90 @@
+/*
+Copyright 2023 Adobe
+All Rights Reserved.
+NOTICE: Adobe permits you to use, modify, and distribute this file in
+accordance with the terms of the Adobe license agreement accompanying
+it.
+*/
+@import '../styles/variables';
+
+.Teaser {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.teaser__container {
+  background: $white;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 0 0 1px $gray-light;
+  min-height: 420px;
+}
+
+.teaser__image {
+  width: 58%;
+  background: $gray-lighter;
+}
+
+.teaser__image-el {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.teaser__content {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 32px;
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 420px;
+}
+
+.teaser__title {
+  margin: 0;
+  color: $white;
+  font-size: $font-size-h1;
+  line-height: 1.8;
+  font-weight: 500;
+  text-align: left;
+  margin-left: -75px;
+}
+
+.teaser__title > span {
+  background: $orange;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  padding: 6px 12px;
+}
+
+.teaser__body {
+  color: $black;
+  font-size: $font-size-18;
+  line-height: 1.4;
+}
+
+.teaser-button {
+  background: $blue;
+  color: $white;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+
+@media only screen and (max-width: $tablet-breakpoint) {
+  .teaser__container {
+    flex-direction: column;
+  }
+  .teaser__image, .teaser__content {
+    width: 100%;
+  }
+  .teaser__image-el {
+    height: 280px;
+  }
+}
