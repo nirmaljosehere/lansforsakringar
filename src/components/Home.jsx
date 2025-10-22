@@ -23,7 +23,7 @@ function Home() {
     return (
         <div className="Home">
             <section className="primary-teaser">
-                <Teaser item="when-your-home-stands-out"/>
+                <Teaser item="we-are-close-at-every-stage-of-life"/>
             </section>
             <section className="section-one">
                 <Title resource="urn:aemconnection:/content/demopotemeaprogram3/us/en/ing/jcr:content/root/container/container/title" prop="jcr:title" type="text"/>

@@ -10,22 +10,28 @@ it.
 .Teaser {
   max-width: $max-width;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .teaser__container {
-  background: $white;
+  background: var(--lfds-base-brand-primary-lf-blue);
+  color: var(--lfds-base-brand-primary-snow);
   border-radius: 16px;
   overflow: hidden;
   display: flex;
-  align-items: stretch;
-  box-shadow: 0 0 0 1px $gray-light;
-  min-height: 420px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: none;
+  min-height: 520px;
+  padding: 32px 40px;
 }
 
 .teaser__image {
-  width: 58%;
-  background: $gray-lighter;
+  width: 50%;
+  background: transparent;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .teaser__image-el {
@@ -36,50 +42,59 @@ it.
 }
 
 .teaser__content {
-  width: 42%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 24px 32px;
-  gap: 24px;
+  padding: 8px 0;
+  gap: 16px;
   align-items: flex-start;
-  max-width: 420px;
+  max-width: 560px;
 }
 
 .teaser__title {
   margin: 0;
-  color: $white;
+  color: var(--lfds-base-brand-primary-snow);
   font-size: $font-size-h1;
-  line-height: 1.8;
-  font-weight: 500;
+  line-height: 1.2;
+  font-weight: var(--lfds-semibold);
   text-align: left;
-  margin-left: -75px;
 }
 
 .teaser__title > span {
-  background: $orange;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  padding: 6px 12px;
+  background: transparent;
 }
 
 .teaser__body {
-  color: $black;
+  color: rgba(255, 255, 255, 0.92);
   font-size: $font-size-18;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .teaser-button {
-  background: $blue;
-  color: $white;
+  background: var(--lfds-base-brand-primary-snow);
+  color: var(--lfds-base-brand-primary-lf-blue);
   border: 0;
   border-radius: 8px;
   padding: 12px 20px;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--lfds-base-brand-secondary-cloud);
+  }
+
+  &:active,
+  &:focus {
+    background: var(--lfds-semantic-background-button-secondary-pressed);
+    outline: none;
+  }
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
   .teaser__container {
     flex-direction: column;
+    padding: 24px;
+    gap: 16px;
   }
   .teaser__image, .teaser__content {
     width: 100%;
