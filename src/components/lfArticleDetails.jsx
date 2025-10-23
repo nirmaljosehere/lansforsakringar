@@ -12,7 +12,7 @@ import useGraphQL from '../api/useGraphQL';
 function LfArticleDetails() {
     const {slug} = useParams();
     const navigate = useNavigate();
-    const persistentQuery = `wknd-shared/ing-articles-by-slug;slug=${slug}`;
+    const persistentQuery = `wknd-shared/lf-articles-by-slug;slug=${slug}`;
 
     const {data, errorMessage} = useGraphQL(persistentQuery);
     if (errorMessage) return <Error errorMessage={errorMessage}/>;
@@ -101,8 +101,8 @@ function NoArticleFound() {
 }
 
 function getArticle(data) {
-    if (data && data.ingArticleList && data.ingArticleList.items && data.ingArticleList.items.length > 0) {
-        return data.ingArticleList.items[0];
+    if (data && data.lfArticleList && data.lfArticleList.items && data.lfArticleList.items.length > 0) {
+        return data.lfArticleList.items[0];
     }
     return undefined;
 }

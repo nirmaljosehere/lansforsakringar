@@ -44,7 +44,7 @@ function LfArticleItem(props) {
 }
 
 function LfArticles() {
-    const persistentQuery = `wknd-shared/ing-articles-by-articletype;articleType=Lab`;
+    const persistentQuery = `wknd-shared/lf-articles-by-articletype;articleType=Lab`;
     const { data, errorMessage } = useGraphQL(persistentQuery);
 
     if (errorMessage) return null;
@@ -53,7 +53,7 @@ function LfArticles() {
     return (
         <section id={`lf-articles-lab`} className="lf-articles">
             <ul className="adventure-items">
-                {data.ingArticleList.items.map((article, index) => (
+                {data.lfArticleList.items.map((article, index) => (
                     <LfArticleItem key={index} {...article} />
                 ))}
             </ul>
