@@ -12,7 +12,7 @@ import useGraphQL from '../api/useGraphQL';
 function LfArticleDetails() {
     const {slug} = useParams();
     const navigate = useNavigate();
-    const persistentQuery = `wknd-shared/ing-articles-by-slug;slug=${slug}`;
+    const persistentQuery = `wknd-shared/lf-articles-by-slug;slug=${slug}`;
 
     const {data, errorMessage} = useGraphQL(persistentQuery);
     if (errorMessage) return <Error errorMessage={errorMessage}/>;

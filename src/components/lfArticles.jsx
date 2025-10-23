@@ -44,7 +44,7 @@ function LfArticleItem(props) {
 }
 
 function LfArticles() {
-    const persistentQuery = `wknd-shared/ing-articles-by-articletype;articleType=Lab`;
+    const persistentQuery = `wknd-shared/lf-articles-by-articletype;articleType=Lab`;
     const { data, errorMessage } = useGraphQL(persistentQuery);
 
     if (errorMessage) return null;
