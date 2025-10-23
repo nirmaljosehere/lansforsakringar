@@ -12,7 +12,7 @@ import Title from './base/Title';
 import Text from './base/Text';
 import Teaser from './Teaser';
 import Adventures from './Adventures';
-import IngArticles from './ingArticles';
+import LfArticles from './lfArticles';
 import HelpAccordionContainer from './HelpAccordionContainer';
 import "./Home.scss";
 
@@ -27,7 +27,7 @@ function Home() {
             </section>
             <section className="section-one">
                 <Title resource="urn:aemconnection:/content/demopotemeaprogram3/us/en/ing/jcr:content/root/container/container/title" prop="jcr:title" type="text"/>
-                <IngArticles category="Lab" />
+                <LfArticles category="Lab" />
             </section>     
             <section className="section-two">
                 <HelpAccordionContainer slug="faq-about-borrowing" />

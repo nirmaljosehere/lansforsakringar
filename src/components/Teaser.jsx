@@ -55,9 +55,9 @@ const Teaser = (props) => {
               {mapJsonRichText(synopsis.json)}
             </div>
           )}
-          <Link to={`/articles/article/${slug || 'article'}${window.location.search}`} className="teaser__cta-link">
+          {/* <Link to={`/articles/article/${slug || 'article'}${window.location.search}`} className="teaser__cta-link">
             <button className="teaser-button" data-aue-prop="ctaLabel" data-aue-type="text">{ctaLabel}</button>
-          </Link>
+          </Link> */}
         </div>
       </div>
   </section>

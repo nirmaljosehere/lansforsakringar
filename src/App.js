@@ -7,8 +7,8 @@ import Home from "./components/Home";
 import AdventureDetail from "./components/AdventureDetail";
 import Articles from "./components/Articles";
 import ArticleDetail from "./components/ArticleDetail";
-import IngArticles from "./components/ingArticles";
-import IngArticleDetail from "./components/ingArticleDetail";
+import LfArticles from "./components/lfArticles";
+import LfArticleDetails from "./components/lfArticleDetails";
 import About from "./components/About";
 import HelpAccordionContainer from "./components/HelpAccordionContainer";
 import {getAuthorHost, getProtocol, getService} from "./utils/fetchData";
@@ -92,8 +92,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/articles" element={<Articles />} />
               <Route path="/articles/article/:slug" element={<ArticleDetail />} />
-              <Route path="/ing/articles" element={<IngArticles />} />
-              <Route path="/ing/articles/:slug" element={<IngArticleDetail />} />
+              <Route path="/lf/articles" element={<LfArticles />} />
+              <Route path="/lf/articles/:slug" element={<LfArticleDetails />} />
               <Route path="/help/:slug" element={<HelpAccordionContainer />} />
               <Route path="/aboutus" element={<About />} />
             </Routes>

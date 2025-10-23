@@ -1,0 +1,26 @@
+@import '../styles/variables';
+
+.lf-articles {
+  padding: 40px 70px;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.lf-article-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px $gray-light;
+  background: $white;
+}
+
+.lf-article-content {
+  padding: 24px 16px 28px 16px;
+}
+
+.lf-article-summary {
+  margin-top: 8px;
+  color: rgba(20, 20, 20, 0.85);
+  font-size: 18px;
+  padding: 0;
+}
+

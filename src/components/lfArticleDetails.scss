@@ -1,15 +1,7 @@
-/*
-Copyright 2022 Adobe
-All Rights Reserved.
-NOTICE: Adobe permits you to use, modify, and distribute this file in
-accordance with the terms of the Adobe license agreement accompanying
-it.
-*/
 @use "sass:math";
-
 @import '../styles/variables';
 
-.adventure-detail {
+.lf-article-detail {
   padding: 0 80px;
   background: $white;
   color: $black;
@@ -42,14 +34,12 @@ it.
   }
 }
 
-
-
-.adventure-detail-content, .adventure-detail-header {
+.lf-article-detail-content, .adventure-detail-header {
   padding: 40px 20%;
   text-align: left;
 }
 
-.adventure-detail-content {
+.lf-article-detail-content {
   .adventure-detail-info {
     display: flex;
     background: $cta-blue;
@@ -71,29 +61,23 @@ it.
     line-height: 24px;
   }
 }
-.adventure-detail-title {
+.lf-article-detail-title {
   margin: 0;
 }
 
-.adventure-detail-content h2 {
+.lf-article-detail-content h2 {
   margin-top: 32px;
   padding: 0px;
 }
 
-.adventure-detail-primaryimage {
+.lf-article-detail-primaryimage {
   margin: 0 auto;
   border-radius: 16px;
   height: 600px;
 }
 
-.adventure-detail-itinerary h2 {
-  font-family: $font-family-ing;
-  font-weight: bold;
-  font-size: $font-size-large;
-}
-
 @media only screen and (max-width: $mobile-breakpoint) {
-  .adventure-detail-content {
+  .lf-article-detail-content {
     .adventure-detail-info {
       flex-direction: column;
       align-items: flex-start;
@@ -103,12 +87,11 @@ it.
 }
 
 @media only screen and (max-width: $tablet-breakpoint) {
-  .adventure-detail-content, .adventure-detail-header {
+  .lf-article-detail-content, .adventure-detail-header {
     padding: 40px 0;
   }
 }
 
-/* Contributer Styles */
 $contributor-image-size: 60px;
 
 .contributor {
@@ -138,5 +121,6 @@ $contributor-image-size: 60px;
     margin-top: 2em;
     margin-bottom: 2em;
   }
-
 }
+
+
